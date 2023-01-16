@@ -1,4 +1,0 @@
-Une charte graphique au format .pdf regroupant :
-o La palette de couleurs
-o La palette des polices d’écriture choisies
-o L’export des wireframes et mockups des pages (en version mobile et desktop)

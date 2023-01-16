@@ -1,1 +1,0 @@
-Un fichier readme.md contenant la démarche à suivre pour le déploiement en local ou en ligne.
