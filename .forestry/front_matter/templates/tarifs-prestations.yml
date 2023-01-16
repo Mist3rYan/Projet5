@@ -1,4 +1,14 @@
 ---
 label: Tarifs prestations
 hide_body: false
-fields: []
+fields:
+- name: titre_de_la_prestation
+  type: text
+  config:
+    required: false
+  label: Titre de la prestation
+- name: prix_de_la_prestation
+  type: text
+  config:
+    required: false
+  label: Prix de la prestation
