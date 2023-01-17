@@ -1,0 +1,26 @@
+---
+label: Prestation
+hide_body: true
+fields:
+- name: nom
+  type: text
+  config:
+    required: false
+  label: Nom
+- name: prix
+  type: text
+  config:
+    required: false
+  label: Prix
+- name: description
+  type: text
+  config:
+    required: false
+  label: Description
+pages:
+- src/prestations/Famille.md
+- src/prestations/Il était une fois.md
+- src/prestations/Juste moi.md
+- src/prestations/J’immortalise l’événement.md
+- src/prestations/Mon bébé.md
+- src/prestations/Pour deux.md
