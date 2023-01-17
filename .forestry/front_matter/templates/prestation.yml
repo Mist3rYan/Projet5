@@ -23,7 +23,7 @@ fields:
     required: false
   label: Tags
   hidden: true
-  description: prestations
+  default: prestations
 pages:
 - src/prestations/Famille.md
 - src/prestations/Il était une fois.md
@@ -31,4 +31,3 @@ pages:
 - src/prestations/J’immortalise l’événement.md
 - src/prestations/Mon bébé.md
 - src/prestations/Pour deux.md
-- src/prestations/tests.md
