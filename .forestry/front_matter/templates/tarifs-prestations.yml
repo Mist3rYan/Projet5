@@ -12,10 +12,3 @@ fields:
   config:
     required: false
   label: Prix de la prestation
-pages:
-- Prestations/Famille.md
-- Prestations/Il était une fois.md
-- Prestations/Juste moi.md
-- Prestations/J’immortalise l’événement.md
-- Prestations/Mon bébé.md
-- Prestations/Pour deux.md
