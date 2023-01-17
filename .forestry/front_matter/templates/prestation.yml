@@ -17,3 +17,5 @@ fields:
   config:
     required: false
   label: Description
+pages:
+- src/prestations/Juste moi.md
