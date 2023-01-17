@@ -23,7 +23,7 @@ fields:
     required: false
   label: Tags
   hidden: true
-  description: prestations
+  default: prestations
 pages:
 - src/prestations/Famille.md
 - src/prestations/Il était une fois.md
