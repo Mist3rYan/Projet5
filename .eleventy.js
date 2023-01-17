@@ -7,7 +7,7 @@ module.exports = function (eleventyConfig) {
 
     const glob = require("glob");
     eleventyConfig.addCollection("images", function(collection) {
-        const images = glob.sync("./sources/img/uploads/*");
+        const images = glob.sync("../img/uploads/*");
         console.log(images);
         return images.map(image => {
             return {
