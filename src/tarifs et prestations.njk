@@ -8,6 +8,11 @@ description: Découvrez mes tarifs abordables de notre photographe professionnel
 </section>
 <section>
     <article class="tarifs">
+        {%- for prestation in collections.prestations] -%}
+            {{prestation.name}}
+            {{prestation.prix}}
+            {{prestation.description}}
+        {%- endfor -%}
         <div class="headTarif">
             <h2 class="titreTarif"></h2>
             <p class="prixTarif"></p>
