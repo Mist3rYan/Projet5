@@ -6,8 +6,3 @@ module.exports = function (eleventyConfig) {
         }
     }
 };
-
-eleventyConfig.addCollection('prestations', (collection) => {
-      const prestations = collection.getFilteredByGlob(`src/prestations/*.md`);
-    return prestations;
-  });
