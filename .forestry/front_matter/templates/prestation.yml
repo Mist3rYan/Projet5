@@ -17,6 +17,13 @@ fields:
   config:
     required: false
   label: Description
+- name: tags
+  type: text
+  config:
+    required: false
+  label: Tags
+  hidden: true
+  description: prestations
 pages:
 - src/prestations/Famille.md
 - src/prestations/Il était une fois.md
