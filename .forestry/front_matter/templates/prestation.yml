@@ -1,4 +1,19 @@
 ---
 label: Prestation
 hide_body: true
-fields: []
+fields:
+- name: nom
+  type: text
+  config:
+    required: false
+  label: Nom
+- name: prix
+  type: text
+  config:
+    required: false
+  label: Prix
+- name: description
+  type: text
+  config:
+    required: false
+  label: Description
