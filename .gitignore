@@ -1,2 +1,3 @@
 #Ignorer le dossier Private
 Private/
+node_modules
