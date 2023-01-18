@@ -20,10 +20,8 @@ description: Explorez ma galerie de photos pour découvrir mes talents de photog
         </ul>
     </nav>
     <div class="galerie-images">
-        <ul>
-        {% for image in collections.images %}
-            <li>{{image.name}}</li>
-        {% endfor %}
-        </ul>
+    {% for image in collections.images %}
+    <img src="{{image.path}}" name="{{image.name}}" alt="{{image.alt}}">
+    {% endfor %}
     </div>
 </section>
