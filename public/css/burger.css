@@ -1,0 +1,49 @@
+.burger {
+    display: none;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    position: relative;
+    z-index: 20;
+}
+
+.burger span {
+    width: 100%;
+    height: 4px;
+    background-color: #F4B942;
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%);
+    transition: background-color 0.5s   ease-in-out;
+}
+
+.burger span::before,
+.burger span::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #F4B942;
+    transition: transform 0.5s   ease-in-out;
+}
+
+.burger span::before {
+    transform: translateY(-10px);
+}
+
+.burger span::after {
+    transform: translateY(10px);
+}
+
+.burger.mobileMenu span {
+    background-color: transparent;
+}
+
+.burger.mobileMenu span::before {
+    transform: translateY(0px)rotateZ(45deg);
+}
+
+.burger.mobileMenu span::after {
+    transform: translateY(0px)rotateZ(-45deg);
+}
