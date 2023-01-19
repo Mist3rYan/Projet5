@@ -2,6 +2,7 @@
 layout: layout.njk
 title: Galerie
 description: Explorez ma galerie de photos pour découvrir mes talents de photographe. Que ce soit pour des portraits, des mariages ou des événements, mes images captivantes sauront vous émerveiller. Faites votre choix parmi mes prestations et contactez-moi pour plus d'informations.
+galerie: galerie
 ---
 <section class="sectionTitre">
     <h1>Galerie</h1>
@@ -9,19 +10,21 @@ description: Explorez ma galerie de photos pour découvrir mes talents de photog
 <section class="galerie">
     <nav class="filtresPhoto">
         <ul class="filtres">
-            <li><a href="#">Toutes les photos</a></li>
-            <li><a href="#">Baptême</a></li>
-            <li><a href="#">Bébé</a></li>
-            <li><a href="#">Couple</a></li>
-            <li><a href="#">Famille</a></li>
-            <li><a href="#">Grossesse</a></li>
-            <li><a href="#">Mariage</a></li>
-            <li><a href="#">Portrait</a></li>
+            <li><a href="#" id="all">Toutes les photos</a></li>
+            <li><a href="#" id="bap">Baptême</a></li>
+            <li><a href="#" id="beb">Bébé</a></li>
+            <li><a href="#" id="cou">Couple</a></li>
+            <li><a href="#" id="fam">Famille</a></li>
+            <li><a href="#" id="gro">Grossesse</a></li>
+            <li><a href="#" id="mar">Mariage</a></li>
+            <li><a href="#" id="por">Portrait</a></li>
         </ul>
     </nav>
     <div class="galerie-images">
-    {% for image in collections.images %}
-        <img src="{{image.path}}" name="{{image.name}}" alt="{{image.alt}}">
-    {% endfor %}
+    <ul>
+        {% for image in collections.images %}
+            <li class="{{image.tag}}"><img src="{{image.path}}" name="{{image.name}}" alt="{{image.alt}}" ></li>
+        {% endfor %}
+    </ul>
     </div>
 </section>

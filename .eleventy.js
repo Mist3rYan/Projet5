@@ -48,11 +48,13 @@ module.exports = function (eleventyConfig) {
     let collection = images.map(i => {
       let alt = i.split('/').pop();
       alt = alt.split('.')[0];
+      let tag = alt.slice(0, 3);
       return {
         path: i.replace('public/img/images/', '/img/images/'),
         thumbpath: i.replace('public/img/images/', '/img/images/thumb-'),
         name: i.split('/').pop(),
-        alt: alt
+        alt: alt,
+        tag: tag
       }
     });
 
