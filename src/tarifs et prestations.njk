@@ -2,18 +2,18 @@
 layout: layout.njk
 title: Tarifs et prestations
 description: Découvrez mes tarifs abordables de notre photographe professionnel. Que ce soit pour des portraits, des mariages, des événements ou des séances photo en extérieur, j'ai les options adaptées à tous les budgets. Contactez-moi pour discuter de vos besoins et recevoir un devis personnalisé.
+urlBackground: url(../img/tarifs.jpg)
 ---
-<section class="sectionTitre">
-    <h1>Tarifs et prestations</h1>
-</section>
-<section>
-    <article class="tarifs">
-        {% for prestation in collections.prestations %}
-            <div class="headTarif">
-                <h2 class="titreTarif">{{prestation.data.nom}}</h2>
-                <p class="prixTarif">{{prestation.data.prix}}</p>
+<section class="cards">
+            {% for prestation in collections.prestations %}
+    <article class="card">
+        <div class="prestation">
+            <p class="prix">{{prestation.data.prix}}</p>
+            <div class="descriptions">
+                <h2 class="titreDescription">{{prestation.data.nom}}</h2>
+                <p class="description">{{prestation.data.description}}</p>
             </div>
-            <p class="texteTarif">{{prestation.data.description}}</p>
-        {% endfor %}
-    </article>   
+        
+    </article>
+            {% endfor %}
 </section>

@@ -10,10 +10,9 @@
 .burger span {
     width: 100%;
     height: 4px;
-    background-color: #F4B942;
     position: absolute;
     top: 50%;
-    right: 50px;
+    right: 20px;
     transform: translateY(-50%);
     transition: background-color 0.5s   ease-in-out;
 }
@@ -24,7 +23,6 @@
     position: absolute;
     width: 100%;
     height: 4px;
-    background-color: #F4B942;
     transition: transform 0.5s   ease-in-out;
 }
 
@@ -42,8 +40,10 @@
 
 .burger.mobileMenu span::before {
     transform: translateY(0px)rotateZ(45deg);
+    background-color: #fff;
 }
 
 .burger.mobileMenu span::after {
     transform: translateY(0px)rotateZ(-45deg);
+    background-color: #fff;
 }

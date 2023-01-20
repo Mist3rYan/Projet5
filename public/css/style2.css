@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+html,
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    font-family: 'Nova Mono', monospace, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    color: #47555E;
+    background-color: rgba(244, 185, 66, 0.8);
+}
+
+.navbar a {
+    color: #47555E;
+    font-size: 1.2rem;
+}
+
+.navbar .logo img {
+    width: 140px;
+}
+
+.navbar .nav-links ul {
+    display: flex;
+}
+
+.navbar .nav-links ul li {
+    margin: 0 20px;
+}
+
+.burger span,
+.burger span::before,
+.burger span::after {
+    background-color: #47555E;
+}
+
+.actived-hover {
+    position: relative;
+}
+.actived-hover:after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -50%;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: #47555E;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .6s cubic-bezier(.3, 0, .1, 1);
+}
+.actived-hover:before {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -50%;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: #47555E;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .6s cubic-bezier(.3, 0, .1, 1);
+}
+.actived-hover:hover:after {
+    transform: scaleX(1);
+}
+.actived-hover:hover:before {
+    transform: scaleX(1);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.sectionTitre {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    color: #BF4E30;
+}
+
+.cards {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 350px;
+    margin: 20px 20px;
+}
+
+.prix {
+    width: 100px;
+    padding: 5px;
+    color: #BF4E30;
+    background-color: rgba(244, 185, 66, 1);
+    font-size: 1.3rem;
+    border-radius: 10px 10px 0 0;
+}
+
+.titreDescription {
+    text-align: center;
+    font-size: 1.3rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.descriptions {
+    padding: 15px;
+    color: #47555E;
+    background-color: rgba(244, 185, 66, 1);
+    font-size: 1.1rem;
+    border-radius: 0 10px 10px 10px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    color: #47555E;
+    background-color: rgba(244, 185, 66, 0.8);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.bi {
+    color: #47555E;
+    margin-left: 15px;
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        background-repeat: repeat;
+    }
+
+    .navbar {
+        padding: 0px;
+    }
+
+    .logo img {
+        margin: 20px;
+    }
+
+    .navbar .logo img {
+        width: 90px;
+    }
+
+    .navbar .burger {
+        display: block;
+    }
+
+    .nav-links {
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(10px);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+    }
+
+    .nav-links ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .nav-links ul li {
+        margin: 25px 0;
+        font-size: 1.2rem;
+    }
+
+    a.actived-hover{
+        color: #fff;
+    }
+    .actived-hover:after {
+        background: #fff;
+    }
+    .actived-hover:before {
+        background: #fff;
+    }
+
+    .mobileMenu {
+        margin-left: 0;
+    }
+
+    .card {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    footer {
+        flex-direction: column;
+    }
+
+    .sociaux {
+        margin-top: 10px;
+    }
+
+    footer p {
+        width: 265px;
+    }
+}
