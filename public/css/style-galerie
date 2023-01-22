@@ -15,6 +15,7 @@ body {
     background-position: center;
     height: 100%;
     font-family: 'Nova Mono', monospace, sans-serif;
+    background-repeat: repeat;
 }
 
 header {

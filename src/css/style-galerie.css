@@ -9,12 +9,12 @@ html,
 body {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     background-size: cover;
-    background-repeat: no-repeat;
     background-position: center;
-    height: 100%;
+    min-height: 100vh;
     font-family: 'Nova Mono', monospace, sans-serif;
+    background-repeat: repeat;
 }
 
 header {
@@ -99,6 +99,7 @@ header {
 }
 
 main {
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -115,105 +116,8 @@ h1 {
     color: #BF4E30;
 }
 
-.cards {
-    margin-top: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
 
-.card {
-    width: 350px;
-    margin: 20px 20px;
-}
-
-.prix {
-    width: 100px;
-    padding: 5px;
-    color: #BF4E30;
-    background-color: rgba(244, 185, 66, 1);
-    font-size: 1.3rem;
-    border-radius: 10px 10px 0 0;
-}
-
-.titreDescription {
-    text-align: center;
-    font-size: 1.3rem;
-    background-color: rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-}
-
-.descriptions {
-    padding: 15px;
-    color: #47555E;
-    background-color: rgba(244, 185, 66, 1);
-    font-size: 1.1rem;
-    border-radius: 0 10px 10px 10px;
-}
-
-.contact {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.contact .formContact {
-    background-color: rgba(244, 185, 66, 0.9);
-    width: 35%;
-    color: #47555E;
-    padding: 10px 30px;
-}
-
-.formContact h3 {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.formulaire {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    padding: 20px;
-}
-
-.formulaire input {
-    height: 20px;
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-.formulaire textarea {
-    height: 100px;
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-.formulaire button {
-    margin-bottom: 10px;
-    background-color: #BF4E30;
-    color: white;
-    height: auto;
-    width: 100px;
-    text-decoration: none;
-}
-
-.contact .coordonnees {
-    background-color: rgba(191, 78, 48, 0.9);
-    width: 35%;
-    color: #fff;
-    padding: 10px 30px;
-}
-
-.coordonnees h2 {
-    text-align: center;
-    margin-bottom: 30px;
-}
-.galerie{
-    display: flex;
-    flex-direction: column;
-    align-content: flex-start;
-}
-.filtres{
+.filtres {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -221,18 +125,30 @@ h1 {
     background-color: rgba(244, 185, 66, 0.8);
     margin: 30px;
     height: 40px;
+    width: 98vw;
     border-radius: 10px;
 }
 
-.filtres li a{
+.filtres li a {
     color: #fff;
+    font-weight: 500;
     font-size: 18px;
 }
 
-.filtres li a:hover{
-    color: #BF4E30;
+.filtres li a:hover {
+    font-weight: 600;
+    color: #47555E;
 }
 
+nav select {
+    display: none;
+}
+
+.galerie {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+}
 
 ul.collection-images {
     display: flex;
@@ -257,6 +173,7 @@ ul.collection-images {
 .collection:hover img {
     transform: scale(1.2);
 }
+
 
 footer {
     display: flex;
@@ -336,30 +253,21 @@ footer {
         margin-left: 0;
     }
 
-    .card {
-        width: 70%;
+    .filtres{
+        display: none;
     }
 
-    .contact {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
+    nav select {
+        display: inline-block;
+        margin: 20px;
+        height: 30PX;
+        width: 400px;
+        background-color: #f4b942;
+        color: #fff;
+        font-size: 18px;
     }
-
-    .contact .formContact {
-        margin-top: 10px;
-        width: 70%;
-        padding: 20px;
-    }
-
-    .contact .formContact h3 {
-        padding: 20px;
-    }
-
-    .contact .coordonnees {
-        margin: 10px 0;
-        width: 70%;
-        padding: 20px;
+    .collection:hover img {
+        transform: scale(1);
     }
 
 }

@@ -6,4 +6,3 @@ burger.addEventListener('click', () => {
     burger.classList.toggle('mobileMenu');
     navLinks.classList.toggle('mobileMenu');
 });
-

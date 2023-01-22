@@ -5,23 +5,34 @@ description: Explorez ma galerie de photos pour découvrir mes talents de photog
 galerie: galerie
 urlBackground: url(../img/galerie.jpg)
 ---
-<section class="galerie">
+
     <nav class="filtresPhoto">
         <ul class="filtres">
-            <li><a href="#" id="all">Toutes les photos</a></li>
-            <li><a href="#" id="bap">Baptême</a></li>
-            <li><a href="#" id="beb">Bébé</a></li>
-            <li><a href="#" id="cou">Couple</a></li>
-            <li><a href="#" id="fam">Famille</a></li>
-            <li><a href="#" id="gro">Grossesse</a></li>
-            <li><a href="#" id="mar">Mariage</a></li>
-            <li><a href="#" id="por">Portrait</a></li>
+            <li><a href="#" class="opt-all">Toutes les photos</a></li>
+            <li><a href="#" class="opt-bap">Baptême</a></li>
+            <li><a href="#" class="opt-beb">Bébé</a></li>
+            <li><a href="#" class="opt-cou">Couple</a></li>
+            <li><a href="#" class="opt-fam">Famille</a></li>
+            <li><a href="#" class="opt-gro">Grossesse</a></li>
+            <li><a href="#" class="opt-mar">Mariage</a></li>
+            <li><a href="#" class="opt-por">Portrait</a></li>
         </ul>
+          <select> 
+            <option value="Toutes les photos" selected="selected"><a class="opt-all" >Toutes les photos</a></option> 
+            <option value="Baptême"><a class="opt-bap" >Baptême</a></option> 
+            <option value="Bébé"><a class="opt-beb" >Bébé</a></option> 
+            <option value="Couple"><a class="opt-cou" >Couple</a></option> 
+            <option value="Famille"><a class="opt-fam" >Famille</a></option> 
+            <option value="Grossesse"><a class="opt-gro" >Grossesse</a></option> 
+            <option value="Mariage"><a class="opt-mar" >Mariage</a></option> 
+            <option value="Portrait"><a class="opt-por" >Portrait</a></option> 
+        </select> 
     </nav>
+    <section class="galerie">
     <div class="galerie-images">
-    <ul>
+    <ul class="collection-images">
         {% for image in collections.images %}
-            <li class="{{image.tag}}"><img src="{{image.path}}" name="{{image.name}}" alt="{{image.alt}}" ></li>
+            <li class="collection {{image.tag}}"><img src="{{image.path}}" name="{{image.name}}" alt="{{image.alt}}" ></li>
         {% endfor %}
     </ul>
     </div>

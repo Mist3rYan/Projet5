@@ -8,7 +8,7 @@
         <!-- Fichier CSS-->
         <link rel="stylesheet" href="../css/burger.css">
         
-            <link rel="stylesheet" href="../css/style2.css">
+            <link rel="stylesheet" href="../css/style-galerie.css">
         
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -53,65 +53,76 @@
             
         </header>
         <main>
-            <section class="galerie">
+            
     <nav class="filtresPhoto">
         <ul class="filtres">
-            <li><a href="#" id="all">Toutes les photos</a></li>
-            <li><a href="#" id="bap">Baptême</a></li>
-            <li><a href="#" id="beb">Bébé</a></li>
-            <li><a href="#" id="cou">Couple</a></li>
-            <li><a href="#" id="fam">Famille</a></li>
-            <li><a href="#" id="gro">Grossesse</a></li>
-            <li><a href="#" id="mar">Mariage</a></li>
-            <li><a href="#" id="por">Portrait</a></li>
+            <li><a href="#" class="opt-all">Toutes les photos</a></li>
+            <li><a href="#" class="opt-bap">Baptême</a></li>
+            <li><a href="#" class="opt-beb">Bébé</a></li>
+            <li><a href="#" class="opt-cou">Couple</a></li>
+            <li><a href="#" class="opt-fam">Famille</a></li>
+            <li><a href="#" class="opt-gro">Grossesse</a></li>
+            <li><a href="#" class="opt-mar">Mariage</a></li>
+            <li><a href="#" class="opt-por">Portrait</a></li>
         </ul>
+          <select> 
+            <option value="Toutes les photos" selected="selected"><a class="opt-all" >Toutes les photos</a></option> 
+            <option value="Baptême"><a class="opt-bap" >Baptême</a></option> 
+            <option value="Bébé"><a class="opt-beb" >Bébé</a></option> 
+            <option value="Couple"><a class="opt-cou" >Couple</a></option> 
+            <option value="Famille"><a class="opt-fam" >Famille</a></option> 
+            <option value="Grossesse"><a class="opt-gro" >Grossesse</a></option> 
+            <option value="Mariage"><a class="opt-mar" >Mariage</a></option> 
+            <option value="Portrait"><a class="opt-por" >Portrait</a></option> 
+        </select> 
     </nav>
+    <section class="galerie">
     <div class="galerie-images">
-    <ul>
+    <ul class="collection-images">
         
-            <li class="bap"><img src="/img/images/bapteme1.jpeg" name="bapteme1.jpeg" alt="bapteme1" ></li>
+            <li class="collection bap"><img src="/img/images/bapteme1.jpeg" name="bapteme1.jpeg" alt="bapteme1" ></li>
         
-            <li class="bap"><img src="/img/images/bapteme2.jpeg" name="bapteme2.jpeg" alt="bapteme2" ></li>
+            <li class="collection bap"><img src="/img/images/bapteme2.jpeg" name="bapteme2.jpeg" alt="bapteme2" ></li>
         
-            <li class="bap"><img src="/img/images/bapteme3.jpeg" name="bapteme3.jpeg" alt="bapteme3" ></li>
+            <li class="collection bap"><img src="/img/images/bapteme3.jpeg" name="bapteme3.jpeg" alt="bapteme3" ></li>
         
-            <li class="beb"><img src="/img/images/bebe1.jpeg" name="bebe1.jpeg" alt="bebe1" ></li>
+            <li class="collection beb"><img src="/img/images/bebe1.jpeg" name="bebe1.jpeg" alt="bebe1" ></li>
         
-            <li class="beb"><img src="/img/images/bebe2.jpeg" name="bebe2.jpeg" alt="bebe2" ></li>
+            <li class="collection beb"><img src="/img/images/bebe2.jpeg" name="bebe2.jpeg" alt="bebe2" ></li>
         
-            <li class="beb"><img src="/img/images/bebe3.jpeg" name="bebe3.jpeg" alt="bebe3" ></li>
+            <li class="collection beb"><img src="/img/images/bebe3.jpeg" name="bebe3.jpeg" alt="bebe3" ></li>
         
-            <li class="cou"><img src="/img/images/couple1.jpeg" name="couple1.jpeg" alt="couple1" ></li>
+            <li class="collection cou"><img src="/img/images/couple1.jpeg" name="couple1.jpeg" alt="couple1" ></li>
         
-            <li class="cou"><img src="/img/images/couple2.jpeg" name="couple2.jpeg" alt="couple2" ></li>
+            <li class="collection cou"><img src="/img/images/couple2.jpeg" name="couple2.jpeg" alt="couple2" ></li>
         
-            <li class="cou"><img src="/img/images/couple3.jpeg" name="couple3.jpeg" alt="couple3" ></li>
+            <li class="collection cou"><img src="/img/images/couple3.jpeg" name="couple3.jpeg" alt="couple3" ></li>
         
-            <li class="fam"><img src="/img/images/famille1.jpeg" name="famille1.jpeg" alt="famille1" ></li>
+            <li class="collection fam"><img src="/img/images/famille1.jpeg" name="famille1.jpeg" alt="famille1" ></li>
         
-            <li class="fam"><img src="/img/images/famille2.jpeg" name="famille2.jpeg" alt="famille2" ></li>
+            <li class="collection fam"><img src="/img/images/famille2.jpeg" name="famille2.jpeg" alt="famille2" ></li>
         
-            <li class="fam"><img src="/img/images/famille3.jpeg" name="famille3.jpeg" alt="famille3" ></li>
+            <li class="collection fam"><img src="/img/images/famille3.jpeg" name="famille3.jpeg" alt="famille3" ></li>
         
-            <li class="gro"><img src="/img/images/grossesse1.jpeg" name="grossesse1.jpeg" alt="grossesse1" ></li>
+            <li class="collection gro"><img src="/img/images/grossesse1.jpeg" name="grossesse1.jpeg" alt="grossesse1" ></li>
         
-            <li class="gro"><img src="/img/images/grossesse2.jpeg" name="grossesse2.jpeg" alt="grossesse2" ></li>
+            <li class="collection gro"><img src="/img/images/grossesse2.jpeg" name="grossesse2.jpeg" alt="grossesse2" ></li>
         
-            <li class="gro"><img src="/img/images/grossesse3.jpeg" name="grossesse3.jpeg" alt="grossesse3" ></li>
+            <li class="collection gro"><img src="/img/images/grossesse3.jpeg" name="grossesse3.jpeg" alt="grossesse3" ></li>
         
-            <li class="mar"><img src="/img/images/mariage1.jpeg" name="mariage1.jpeg" alt="mariage1" ></li>
+            <li class="collection mar"><img src="/img/images/mariage1.jpeg" name="mariage1.jpeg" alt="mariage1" ></li>
         
-            <li class="mar"><img src="/img/images/mariage2.jpeg" name="mariage2.jpeg" alt="mariage2" ></li>
+            <li class="collection mar"><img src="/img/images/mariage2.jpeg" name="mariage2.jpeg" alt="mariage2" ></li>
         
-            <li class="mar"><img src="/img/images/mariage3.jpeg" name="mariage3.jpeg" alt="mariage3" ></li>
+            <li class="collection mar"><img src="/img/images/mariage3.jpeg" name="mariage3.jpeg" alt="mariage3" ></li>
         
-            <li class="por"><img src="/img/images/portrait1.jpeg" name="portrait1.jpeg" alt="portrait1" ></li>
+            <li class="collection por"><img src="/img/images/portrait1.jpeg" name="portrait1.jpeg" alt="portrait1" ></li>
         
-            <li class="por"><img src="/img/images/portrait2.jpeg" name="portrait2.jpeg" alt="portrait2" ></li>
+            <li class="collection por"><img src="/img/images/portrait2.jpeg" name="portrait2.jpeg" alt="portrait2" ></li>
         
-            <li class="por"><img src="/img/images/portrait3.jpeg" name="portrait3.jpeg" alt="portrait3" ></li>
+            <li class="collection por"><img src="/img/images/portrait3.jpeg" name="portrait3.jpeg" alt="portrait3" ></li>
         
-            <li class="por"><img src="/img/images/portrait4.jpeg" name="portrait4.jpeg" alt="portrait4" ></li>
+            <li class="collection por"><img src="/img/images/portrait4.jpeg" name="portrait4.jpeg" alt="portrait4" ></li>
         
     </ul>
     </div>
