@@ -59,6 +59,7 @@ header {
 .actived-hover {
     position: relative;
 }
+
 .actived-hover:after {
     position: absolute;
     bottom: 0;
@@ -73,6 +74,7 @@ header {
     transform-origin: left;
     transition: transform .6s cubic-bezier(.3, 0, .1, 1);
 }
+
 .actived-hover:before {
     position: absolute;
     top: 0;
@@ -87,9 +89,11 @@ header {
     transform-origin: right;
     transition: transform .6s cubic-bezier(.3, 0, .1, 1);
 }
+
 .actived-hover:hover:after {
     transform: scaleX(1);
 }
+
 .actived-hover:hover:before {
     transform: scaleX(1);
 }
@@ -145,6 +149,64 @@ h1 {
     background-color: rgba(244, 185, 66, 1);
     font-size: 1.1rem;
     border-radius: 0 10px 10px 10px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contact .formContact {
+    background-color: rgba(244, 185, 66, 0.9);
+    width: 35%;
+    color: #47555E;
+    padding: 10px 30px;
+}
+
+.formContact h3 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.formulaire {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 20px;
+}
+
+.formulaire input {
+    height: 20px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.formulaire textarea {
+    height: 100px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.formulaire button {
+    margin-bottom: 10px;
+    background-color: #BF4E30;
+    color: white;
+    height: auto;
+    width: 100px;
+    text-decoration: none;
+}
+
+.contact .coordonnees {
+    background-color: rgba(191, 78, 48, 0.9);
+    width: 35%;
+    color: #fff;
+    padding: 10px 30px;
+}
+
+.coordonnees h2 {
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 footer {
@@ -209,12 +271,14 @@ footer {
         font-size: 1.2rem;
     }
 
-    a.actived-hover{
+    a.actived-hover {
         color: #fff;
     }
+
     .actived-hover:after {
         background: #fff;
     }
+
     .actived-hover:before {
         background: #fff;
     }
@@ -226,6 +290,29 @@ footer {
     .card {
         width: 70%;
     }
+
+    .contact {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .contact .formContact {
+        margin-top: 10px;
+        width: 70%;
+        padding: 20px;
+    }
+
+    .contact .formContact h3 {
+        padding: 20px;
+    }
+
+    .contact .coordonnees {
+        margin: 10px 0;
+        width: 70%;
+        padding: 20px;
+    }
+
 }
 
 @media screen and (max-width: 590px) {
