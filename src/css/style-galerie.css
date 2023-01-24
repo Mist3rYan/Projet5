@@ -261,13 +261,18 @@ footer {
         display: inline-block;
         margin: 20px;
         height: 30PX;
-        width: 400px;
+        width: 300px;
         background-color: #f4b942;
         color: #fff;
         font-size: 18px;
     }
     .collection:hover img {
         transform: scale(1);
+    }
+
+    .collection {
+        width: 380px;
+        margin: 0;
     }
 
 }
