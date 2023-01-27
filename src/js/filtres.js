@@ -156,7 +156,6 @@ document.querySelector(".opt-por").addEventListener("click", () => {
 
 //filtre par catégorie select
 select.addEventListener('change', () => {
-    console.log(select.value);
     if(select.value == "Toutes les photos") {
     Array.from(document.getElementsByClassName('bap')).forEach(element => element.style.display = "block");
     Array.from(document.getElementsByClassName('beb')).forEach(element => element.style.display = "block");
